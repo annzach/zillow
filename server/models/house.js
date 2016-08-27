@@ -7,7 +7,7 @@ const houseSchema = new mongoose.Schema({
   price:{type:Number, required:true},
   location:{type:String, required:true},
   imageurl:{type:String},
-  buyer:{type:mongoose.Schema.Types.ObjectId, ref: 'Person'}
+  owner:{type:mongoose.Schema.Types.ObjectId, ref: 'Person'}
 
 
 });
